@@ -51,6 +51,11 @@ public class LFRecyclerView extends RecyclerView {
     private Adapter adapter;
     private LFAdapterDataObserver observer;
 
+
+    public LFRecyclerViewAdapter getAdapter(){
+        return lfAdapter;
+    }
+
     public void setHeaderView(View headerView) {
         this.headerView = headerView;
         if (lfAdapter != null) {
